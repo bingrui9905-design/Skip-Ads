@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">抖音划走</string>
+    <string name="service_name">抖音划走</string>
+    <string name="service_desc">刷抖音时遇到广告、直播带货、团购这类视频，自动帮你划到下一条。只在抖音里工作，不联网，不收集任何数据。</string>
+</resources>
