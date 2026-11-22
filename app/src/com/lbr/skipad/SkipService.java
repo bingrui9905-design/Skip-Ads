@@ -32,10 +32,10 @@ import java.util.List;
 import java.util.Locale;
 
 /**
- * v0.2
- * - 按关键词让系统直接查找节点（每个词一次调用），不再逐个遍历整棵界面树
- * - 节流：抖音界面一变就扫，但最多每 150ms 一次（v0.1 的防抖在视频播放时会被无限推迟）
- * - 常驻通知：前台服务，防止 MIUI 冻结/杀掉
+ * 识别与划走：
+ * - 先按关键词让系统直接查找节点；没命中再完整遍历界面兜底（限频）
+ * - 节流：抖音界面一变就检查，最多每 150ms 一次；不用防抖，否则视频播放时会被无限推迟
+ * - 常驻通知：前台服务，防止系统冻结/杀掉
  */
 public class SkipService extends AccessibilityService
         implements SharedPreferences.OnSharedPreferenceChangeListener {

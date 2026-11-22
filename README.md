@@ -42,10 +42,10 @@
 
 只从本仓库的 [Releases](../../releases/latest) 下载。其他渠道的同名 APK 可能被改过。
 
-v0.8 的 SHA-256：
+v1.0 的 SHA-256：
 
 ```
-16ee25386443c87687ba94bc770a8db792c55104d9f880bea75be48c0cf97d33
+f9ee64713faf7f5f3b22dd2ec3832de2462b4eec97fe195c66b3f51eb5307e98
 ```
 
 所有正式版本都用同一个签名证书，指纹（SHA-256）：
@@ -57,8 +57,8 @@ cbcf696453eaca4f01efd536b8ffefb0740e37a33b34f917a463a98499848490
 在电脑上核对：
 
 ```bash
-shasum -a 256 skip-ads-v0.8.apk
-apksigner verify --print-certs skip-ads-v0.8.apk
+shasum -a 256 skip-ads-v1.0.apk
+apksigner verify --print-certs skip-ads-v1.0.apk
 ```
 
 签名不一致的安装包不要装，后续版本也无法覆盖安装官方版。
